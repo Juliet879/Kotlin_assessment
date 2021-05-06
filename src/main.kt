@@ -9,7 +9,7 @@ fun main() {
     diana.birthday()
     comparison(5,2)
     game("Rock","Scissor")
-    naming("Juliet","Salma","Mildred","Benin","Nimo")
+    println(naming("Juliet","Salma","Mildred","Benin","Nimo"))
 }
 fun introduction(name:String,age:Int){
     println("My name is $name and I am $age years old")
@@ -51,9 +51,9 @@ fun comparison(num1:Int,num2:Int): Boolean {
 }
 
 fun game(choice1:String,choice2:String){
-   var r = "Rock"
-    var p = "Paper"
-    var s = "Scissors"
+    val r = "Rock"
+    val p = "Paper"
+    val s = "Scissors"
     if (choice1 === choice2){
         println("Its a draw")
     }
@@ -66,10 +66,9 @@ fun game(choice1:String,choice2:String){
         }
     }
 }
-fun naming(name1:String,name2:String,name3:String,name4:String,name5:String):MutableList<String>{
-    var namelist = mutableListOf<String>()
-        return namelist.add(name1,name2,name3,name4,name5)
+fun naming(name1:String,name2:String,name3:String,name4:String,name5:String):Array<String>{
 
+  return arrayOf(name1,name2,name3,name4,name5)
 }
 
 
