@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main() {
     introduction("Juliet",21)
     dispense(14)
@@ -9,7 +11,7 @@ fun main() {
     diana.birthday()
     comparison(5,2)
     game("Rock","Scissor")
-    println(naming("Juliet","Salma","Mildred","Benin","Nimo"))
+    println(Arrays.toString(naming("Juliet","Salma","Mildred","Benin","Nimo")))
 }
 fun introduction(name:String,age:Int){
     println("My name is $name and I am $age years old")
