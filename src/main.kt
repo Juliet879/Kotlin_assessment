@@ -1,15 +1,13 @@
 fun main() {
     introduction("Juliet",21)
     dispense(14)
-
+    longNames(arrayOf("Julie","Brinah","Simo","Beth","Anabel"))
     var diana = Human("Diana",28,63)
     diana.eat(1)
     diana.speak("Hello there")
-
     comparison(5,2)
-
-
     game("Rock","Scissor")
+    naming("Juliet","Salma","Mildred","Benin","Nimo")
 }
 fun introduction(name:String,age:Int){
     println("My name is $name and I am $age years old")
@@ -25,14 +23,13 @@ fun dispense(age:Int){
         println("Cocacola")
     }
 }
-//fun longNames(names:Array<String>):Int{
-//    for (name in names){
-//        if (name.length>4){
-//            var named = 0
-//            named+=name
-//        }
-//    }
-//}
+fun longNames(names:Array<String>):Int{
+    for (name in names){
+        if (name.length>4){
+            var named = 0
+        }
+    }
+}
 class Human(var name:String,var age:Int,var weight:Int){
     fun eat(foodWeight:Int){
         println("I am eating $foodWeight kgs of food")
@@ -61,9 +58,8 @@ fun game(choice1:String,choice2:String){
         }
     }
 }
-fun naming(names:Array<String>{
+fun naming(name1:String,name2:String,name3:String,name4:String,name5:String):Array<String>{
     var namelist = mutableListOf<String>()
-    for( name in names) {
-        return namelist.add(name)
-    }
+        return namelist.add(name1,name2,name3,name4,name5)
+
 }
